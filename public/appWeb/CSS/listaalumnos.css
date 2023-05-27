@@ -19,7 +19,6 @@
     display: flex;
     flex-direction: column;
     justify-content:flex-start;
-
 }
 .menu-vertical li a {
     display: block;
@@ -38,11 +37,9 @@
     transform: scale(1.1);
     transition: ease-in-out 0.5s;
     border-radius: 5px;
-    
 }
 .menu-vertical li ul {
     display: none;
-   
 }
 .menu-vertical li:hover ul {
     display: block;
@@ -54,7 +51,6 @@
 }
 .menu-vertical li ul li {
     display: block;
-
 }
 .profesor{
     margin-top: 85px;
@@ -173,8 +169,6 @@ label{
     font-size: 20px;
     background-color:rgb(144, 172, 236);
     color: #fffafa;
-    
-    
 }
 input{
     padding: 5px;
@@ -210,7 +204,6 @@ input{
 }
 .izqui{
     width: 300px;
-
 }
 
 .izquierda .campos{
@@ -309,7 +302,6 @@ button:hover{
 
 .campos{
     background-color:rgb(144, 172, 236);
-    
 }
 .profesor{
     margin-top: 85px;
