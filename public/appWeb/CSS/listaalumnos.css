@@ -2,32 +2,68 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:rgb(194, 216, 242);
     font-family: 'Inter', sans-serif;
+}
+body{
+    background-color:rgb(194, 216, 242);
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    background-color: rgba(80, 121, 201, 1);
+    color: #fff;
+    width: 200px;
+    height: auto;
+    padding: 20px;
 }
 .menu-vertical {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    bottom: 0;
-    position: fixed;
-    height:100%;
-    width:250px;
     background-color: rgba(80, 121, 201, 1);
-    overflow: auto;
+}
+.content {
     display: flex;
     flex-direction: column;
-    justify-content:flex-start;
+    gap: 10px;
+    flex: 1;
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(80, 121, 201, 1);
+    padding: 10px;
+}
+h1{
+    padding: 10px;
+    background-color: rgba(80, 121, 201, 1);
+    color: #fffafa;
+    font-family: 'Itim', cursive;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+}
+h2{
+    background-color:rgba(80, 121, 201, 1);
+    color:#ffff;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+
+}
+.usuario{
+    color: rgb(5, 5, 5); 
+    background-color: rgba(80, 121, 201, 1);
+    font-size: 30px;
 }
 .menu-vertical li a {
-    display: block;
+    display: flex;
     color: rgb(247, 246, 244);
     background-color: rgba(80, 121, 201, 1);
     padding: 20px 5px;
     text-decoration: none;
-    align-items: center;
-    text-align: start;
     font-size:15px;
     font-weight: 600;
 }
@@ -41,118 +77,46 @@
 .menu-vertical li ul {
     display: none;
 }
-.menu-vertical li:hover ul {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 200px;
-    width: 100px;
-    background-color: #ddd;
-}
 .menu-vertical li ul li {
     display: block;
 }
 .profesor{
-    margin-top: 85px;
     margin-bottom: 20px ;
     text-align: start;
     font-weight: 700;
-}
-
-h2{
-    background-color:rgba(80, 121, 201, 1);
-    color:#ffff;
-    font-size: 30px;
-    font-weight: 700;
-    padding-left: 50px;
-    font-family: 'Inter', sans-serif;
-
 }
 .icono{
     font-size: 30px;
     color:rgb(246, 243, 243);
     background-color:rgba(0, 0, 0, 0);
     padding: 0 10px;
-
 }
-.logo{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(80, 121, 201, 1);
+.icon{
+    font-size: 20px;
+    color:rgb(246, 243, 243);
+    background-color:rgba(0, 0, 0, 0);
+    padding: 0 10px;
+}
+.content .contenedor{
+    background-color: rgba(144, 172, 236, 1);
     padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
 }
 h3{
-    background-color:rgb(194, 216, 242);
-    padding: 10px 0;
     color: #fffafa;
     font-size: 20px;
 }
-
-
-h1{
-    padding: 10px;
-    background-color: rgba(80, 121, 201, 1);
-    color: #fffafa;
-    font-family: 'Itim', cursive;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 36px;
-    
-}
-
-.usuario{
-    color: rgb(5, 5, 5); 
-    background-color: rgba(80, 121, 201, 1);
-    font-size: 30px;
-}
-.dash{
-    position:absolute;
-    width:80%;
-    right: 0;
-    top: 100px;
-    height: 100%;
-    left:250px;
-}
-.dash .contenido{
-    background-color:rgb(194, 216, 242);
-    height: 100%;
-    width: auto;
-}
-.conteiner{
-    background-color:rgb(144, 172, 236);
-    border-radius: 10px;
-    margin: 20px auto;
-    padding: 10px;
-    text-align: center;
-    width: 90%;
-    height: auto;
-}
-.titul{
-    background-color:rgb(144, 172, 236);
-    color: #fffafa;
-    text-align: start;
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 24px;
-    padding: 20px;
-    font-family: 'Inter', sans-serif;
-    text-transform: uppercase;
-}
-
 p{
     background-color:rgb(144, 172, 236);
-    padding: 30px;
+    padding: 10px;
     color: #fffafa;
     text-align: start;
-    font-size: 20px;
+    font-size: 15px;
 }
 .formulario{
-    display: flex;
-    flex-wrap: wrap;
+
     text-align: center;
-    justify-content:space-around;
     align-items: center;
     background-color:rgb(144, 172, 236);
     color: #fffafa;
@@ -163,13 +127,6 @@ p{
     background-color:rgb(144, 172, 236);
 }
 
-label{
-    padding: 0 10px;
-    font-weight: 600;
-    font-size: 20px;
-    background-color:rgb(144, 172, 236);
-    color: #fffafa;
-}
 input{
     padding: 5px;
     font-size: 12px;
@@ -180,45 +137,44 @@ input{
     background-color: #fff;
     text-align: start;
 }
+
 .izquierda{
     background-color:rgba(144, 172, 236);
     display: flex;
-    flex-direction: column;
     gap: 2rem;
-
-}
-.medio{
-    background-color:rgba(144, 172, 236);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-
+    justify-content: space-around;
 }
 .derecha{
     background-color:rgb(144, 172, 236);
     display: flex;
-    flex-direction: column;
     gap: 2rem;
-    margin-bottom: 20px;
-
+    justify-content:space-around;
 }
+
 .izqui{
     width: 300px;
 }
+.relleno{
+    width: 310px;
+}
 
 .izquierda .campos{
-
     display: flex;
     justify-content: space-between;
     
 }
 .derecha .campos{
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
+}
+.separar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .agregar{
-    padding: 10px;
+    padding: 6px;
     font-size: 15px;
     width: 200px;
     border: 0;
@@ -235,7 +191,6 @@ input{
 }
 
 .opciones{
-    border-radius: 100px;
     padding: 5px;
     text-align: center;
     font-size: 15px;
@@ -243,6 +198,14 @@ input{
     color: black;
     background-color: #fff;
     border: none;
+}
+.filtros{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color:rgb(144, 172, 236);
+    gap: 30px;
 }
 option{
     background-color: #fff;
@@ -255,7 +218,7 @@ option{
     
 }
 button{
-    padding: 10px;
+    padding: 6px;
     font-size: 15px;
     width: 200px;
     border: 0;
@@ -267,6 +230,10 @@ button:hover{
     cursor: pointer;
     transform: scale(1.1);
     transition: ease-in-out 0.5s;
+}
+label {
+    color: #fff;
+    padding: 0 5px;
 }
 .enviar{
     border-radius: 100px;
@@ -281,24 +248,13 @@ button:hover{
 }
 .cargarexcel{
     width: 350px;
-    padding: 10px;
+    padding: 7px;
     margin: 0 auto;
     margin-bottom: 10px;
     display: block;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.excel{
-    background-color:rgb(144, 172, 236);
-}
-.filtros{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-    background-color:rgb(144, 172, 236);
-    gap: 60px;
-}
+
 
 .campos{
     background-color:rgb(144, 172, 236);
@@ -312,7 +268,7 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 10px 0;
+    margin: 5px 0;
     background-color:rgb(144, 172, 236);
 }
 .table{
@@ -321,7 +277,7 @@ button:hover{
 }
 table{
     width: 90%;
-    margin: 10px auto;
+    margin: 5px auto;
     text-align: center;
     background-color:  rgba(144, 172, 236,1);
     border-collapse: collapse;
@@ -333,13 +289,14 @@ thead th{
     background-color:  rgba(144, 172, 236,1);
     color: #ffffff;
     border: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 tbody td{
     padding: 15px;
     background-color:  white;
-    height: 50px;
+    height: 30px;
 }
+
 .guardar{
     padding: 0 5px;
     font-size: 20px;

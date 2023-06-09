@@ -9,33 +9,27 @@ body{
 }
 .container {
     display: flex;
-  }
-  
-  .sidebar {
+}
+.sidebar {
     background-color: rgba(80, 121, 201, 1);
     color: #fff;
     width: 200px;
     height: auto;
     padding: 20px;
-
-  }
-  
-  .menu-vertical {
+}
+.menu-vertical {
     list-style-type: none;
     background-color: rgba(80, 121, 201, 1);
-
-
 }
-  .content {
+.content {
     display: flex;
     flex-direction: column;
     gap: 10px;
     flex: 1;
     padding: 20px;
+}
 
-  }
-
-  .logo{
+.logo{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -109,8 +103,6 @@ h2{
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
-
-
 }
 h3{
     padding: 10px 0;
@@ -124,6 +116,7 @@ p{
     text-align: start;
     font-size: 20px;
 }
+
 .opciones{
     padding: 5px;
     text-align: center;
@@ -140,6 +133,10 @@ p{
     padding: 10px;
     background-color:rgb(144, 172, 236);
     gap: 30px;
+}
+label {
+    color: #fff;
+    padding: 0 5px;
 }
 
 .table{

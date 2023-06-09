@@ -244,27 +244,5 @@ formulario.addEventListener('submit', e => {
   */
 
   function guardarDatos() {
-  const filas = document.querySelectorAll('#miTabla tbody tr');
-  const datos = [];
-  filas.forEach(fila => {
-    const codigo = fila.querySelector('td:nth-child(1)').textContent;
-    const dni = fila.querySelector('td:nth-child(2)').textContent;
-    const nombre = fila.querySelector('td:nth-child(3)').textContent;
-    const apellido = fila.querySelector('td:nth-child(4)').textContent;
-    const correo = fila.querySelector('td:nth-child(5)').textContent;
-    const direccion = fila.querySelector('td:nth-child(6)').textContent;
-    
-    const objeto = {
-      codigo,
-      dni,
-      nombre,
-      apellido,
-      correo,
-      direccion
-    };
-    
-    datos.push(objeto);
-  });
-  
-  localStorage.setItem('datos', JSON.stringify(datos));
+
 } 
